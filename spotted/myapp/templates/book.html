@@ -1,0 +1,89 @@
+{% load static %}
+    <link
+        rel="stylesheet"
+        style="text/css"
+        href="{% static 'home/css/bootstrap.css'  %}"
+    >
+
+<html>
+
+<div class="bg-dark">
+
+{% include "Navbar.html" %}
+{% include "Jumbotron.html" %}
+
+
+
+
+<div class="container">
+  <div class="row mb-4">
+    <div class="col-sm">
+      <div class="card bg-secondary" style="width: 18rem; height: 30rem">
+        <img class="card-img-top" style="height: 13rem" src="{% static 'images/beauty_spot.jfif' %}" alt="Card image cap">
+          <div class="card-body">
+              <h5>Latest reseach papers </h5>
+                <p>Find out more about this topic </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card bg-secondary" style="width: 18rem; height: 30rem">
+        <img class="card-img-top"  style="height: 13rem" src="{% static 'images/beauty_spot2.jfif' %}" alt="Card image cap">
+          <div class="card-body">
+              <h5>Data about beauty spot and skin cancer </h5>
+                <p>See creative and underlining data visualizations about this health issue </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card bg-secondary" style="width: 18rem; height: 30rem">
+        <img class="card-img-top" style="height: 13rem" src="{% static 'images/beauty_spot3.jfif' %}" alt="Card image cap">
+          <div class="card-body">
+              <h5>Book : {{ book.title}} </h5>
+                <p>Published on : {{book.pub_date}} </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="card bg-secondary" style="width: 18rem; height: 30rem">
+        <img class="card-img-top" style="height: 13rem" src="{% static 'images/beauty_spot.jfif' %}" alt="Card image cap">
+          <div class="card-body">
+              <h5>Book : {{ book.title}} </h5>
+                <p>Published on : {{book.pub_date}} </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card bg-secondary" style="width: 18rem; height: 30rem">
+        <img class="card-img-top"  style="height: 13rem" src="{% static 'images/beauty_spot2.jfif' %}" alt="Card image cap">
+          <div class="card-body">
+              <h5>Book : {{ book.title}} </h5>
+                <p>Published on : {{book.pub_date}} </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card bg-secondary" style="width: 18rem; height: 30rem">
+        <img class="card-img-top" style="height: 13rem" src="{% static 'images/beauty_spot3.jfif' %}" alt="Card image cap">
+          <div class="card-body">
+              <h5>Book : {{ book.title}} </h5>
+                <p>Published on : {{book.pub_date}} </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "Footer.html" %}
+</div>
+
+</html>
