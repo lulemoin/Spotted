@@ -22,3 +22,6 @@ def welcome(request):
 
 def test_pic(request):
     return render(request, 'test_pic.html')
+
+def CV(request):
+    return render(request, 'CV.html')

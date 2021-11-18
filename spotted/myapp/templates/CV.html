@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include "Navbar.html" %}
+{% include "Jumbotron.html" %}
+
+<!--<h1>PDF Example with iframe</h1>
+<iframe src="{% static 'images/CV.pdf' %}"  width="60px" height="100px">
+    </iframe>
+    -->
+
+<div class="row justify-content-md-center">
+    <img style="height: 50rem" src="{% static 'images/CV.jpg' %}">
+</div>
+
+</body>
+</html>
